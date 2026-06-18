@@ -1,56 +1,113 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
-    <section
-      className="relative h-[700px] flex items-center"
-      style={{
-        background:
-          "linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b') center/cover"
-      }}
-    >
-      <div className="container-custom">
+    <section className="bg-[#FAF8F3] overflow-hidden">
 
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
+      <div className="container-custom min-h-[750px] flex items-center">
 
-          <h1 className="text-white text-6xl font-bold max-w-3xl">
+        {/* Left Content */}
+        <div className="w-full lg:w-1/2">
 
-            Earth's Finest Spices
+          <motion.div
+            initial={{ opacity: 0, x: -60 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+          >
 
-          </h1>
+            <span className="text-[#C79B35] font-semibold tracking-widest uppercase">
+              Premium Indian Spices
+            </span>
 
-          <h2 className="text-[#C79B35] text-5xl mt-4">
-            Purely Sourced.
-          </h2>
+            <h1 className="mt-4 text-5xl lg:text-7xl font-bold text-[#0D3B2E] leading-tight">
 
-          <h2 className="text-white text-5xl mt-2">
-            Naturally Powerful.
-          </h2>
+              Purity Close
+              <br />
+              To Nature
 
-          <p className="text-white mt-6 max-w-xl text-lg">
-            Bringing purity, authenticity and
-            tradition from India's finest spice
-            regions directly to your kitchen.
-          </p>
+            </h1>
 
-          <div className="mt-8 flex gap-4">
+            <p className="mt-8 text-lg text-gray-600 max-w-xl leading-8">
 
-            <button className="bg-[#C79B35] px-8 py-4 rounded-lg">
-              Explore Products
-            </button>
+              Discover authentic spices sourced directly
+              from India's most celebrated spice-growing
+              regions. Bringing purity, tradition and
+              excellence to every kitchen.
 
-            <button className="border border-white text-white px-8 py-4 rounded-lg">
-              Partner With Us
-            </button>
+            </p>
 
-          </div>
+            <div className="mt-10 flex flex-wrap gap-4">
 
-        </motion.div>
+              <Link to="/products">
+
+                <button
+                  className="
+                  bg-[#0D3B2E]
+                  text-white
+                  px-8
+                  py-4
+                  rounded-xl
+                  hover:bg-[#08271e]
+                  transition"
+                >
+                  Explore Products
+                </button>
+
+              </Link>
+
+              <Link to="/partner">
+
+                <button
+                  className="
+                  border-2
+                  border-[#C79B35]
+                  text-[#C79B35]
+                  px-8
+                  py-4
+                  rounded-xl
+                  hover:bg-[#C79B35]
+                  hover:text-white
+                  transition"
+                >
+                  Partner With Us
+                </button>
+
+              </Link>
+
+            </div>
+
+          </motion.div>
+
+        </div>
+
+        {/* Right Image */}
+        <div className="hidden lg:flex w-1/2 justify-center">
+
+          <motion.div
+            initial={{ opacity: 0, y: 60 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
+
+            <img
+              src="/images/products/lakadong-pack.png"
+              alt="Lakadong Turmeric"
+              className="
+                w-[450px]
+                drop-shadow-2xl
+                hover:scale-105
+                transition
+                duration-500
+              "
+            />
+
+          </motion.div>
+
+        </div>
 
       </div>
+
     </section>
   );
 }
