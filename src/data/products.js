@@ -3,7 +3,7 @@ const products = [
     id: "lakadong-turmeric",
     name: "Lakadong Turmeric",
     region: "Meghalaya",
-    image: "/images/products/lakadong-pack.png",
+    image: "/images/products/lakadong_pack.png",
     description:
       "Premium Lakadong Turmeric sourced from Meghalaya, renowned for its high curcumin content."
   },
@@ -11,7 +11,7 @@ const products = [
     id: "byadagi-chilli",
     name: "Byadagi Chilli",
     region: "Karnataka",
-    image: "/images/products/byadagi-pack.png",
+    image: "/images/products/byadagi_pack.png",
     description:
       "Authentic Byadagi Chilli known for its deep red color and mild heat."
   },
@@ -19,7 +19,7 @@ const products = [
     id: "guntur-chilli",
     name: "Guntur Chilli",
     region: "Andhra Pradesh",
-    image: "/images/products/guntur-pack.png",
+    image: "/images/products/guntur_pack.png",
     description:
       "Bold and flavorful Guntur Chilli sourced from Andhra Pradesh."
   },
@@ -27,7 +27,7 @@ const products = [
     id: "black-pepper",
     name: "Black Pepper",
     region: "Kerala",
-    image: "/images/products/pepper-pack.png",
+    image: "/images/products/black_pepper_pack.png",
     description:
       "Premium Kerala Black Pepper with strong aroma and rich piperine content."
   }

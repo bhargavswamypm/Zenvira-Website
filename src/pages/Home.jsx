@@ -11,23 +11,23 @@ import RegionsSection from "../components/RegionsSection";
 export default function Home() {
   return (
     <>
-      <Navbar />
+<Navbar />
 
-      <Hero />
-      <Marketplace />
+<Hero />
 
+<Marketplace />
 
 <WhyChooseUs />
 
-<RegionsSection />
-
 <ProductSection />
+
+<RegionsSection />
 
 <MissionSection />
 
 <PartnerCTA />
 
-      <Footer />
+<Footer />
     </>
   );
 }

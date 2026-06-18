@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className="bg-[#FAF8F3] overflow-hidden">
 
-      <div className="container-custom min-h-[750px] flex items-center">
+<div className="container-custom py-12 flex items-center">
 
         {/* Left Content */}
         <div className="w-full lg:w-1/2">
@@ -91,7 +91,7 @@ export default function Hero() {
           >
 
             <img
-              src="/images/products/lakadong-pack.png"
+              src="/images/home/home.png"
               alt="Lakadong Turmeric"
               className="
                 w-[450px]

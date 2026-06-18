@@ -24,7 +24,7 @@ export default function About() {
 
             <div>
               <img
-                src="/images/about/about-spices.jpg"
+                src="/images/about/about.png"
                 alt="About Zenvira"
                 className="rounded-2xl shadow-lg"
               />

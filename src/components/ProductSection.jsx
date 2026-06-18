@@ -2,22 +2,22 @@ const products = [
   {
     name: "Lakadong Turmeric",
     region: "Meghalaya",
-    image: "/images/products/lakadong-pack.png"
+    image: "/images/products/lakadong_pack.png"
   },
   {
     name: "Byadagi Chilli",
     region: "Karnataka",
-    image: "/images/products/byadagi-pack.png"
+    image: "/images/products/byadagi_pack.png"
   },
   {
     name: "Guntur Chilli",
     region: "Andhra Pradesh",
-    image: "/images/products/guntur-pack.png"
+    image: "/images/products/guntur_pack.png"
   },
   {
     name: "Black Pepper",
     region: "Kerala",
-    image: "/images/products/pepper-pack.png"
+    image: "/images/products/black_pepper_pack.png"
   }
 ];
 

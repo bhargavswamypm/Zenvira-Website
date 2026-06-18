@@ -2,22 +2,22 @@ const regions = [
   {
     name: "Meghalaya",
     product: "Lakadong Turmeric",
-    image: "/images/regions/meghalaya.jpg",
+    image: "/images/regions/meghalaya.png",
   },
   {
     name: "Karnataka",
     product: "Byadagi Chilli",
-    image: "/images/regions/karnataka.jpg",
+    image: "/images/regions/karnataka.png",
   },
   {
     name: "Andhra Pradesh",
     product: "Guntur Chilli",
-    image: "/images/regions/andhra.jpg",
+    image: "/images/regions/andhra.png",
   },
   {
     name: "Kerala",
     product: "Black Pepper",
-    image: "/images/regions/kerala.jpg",
+    image: "/images/regions/kerala.png",
   },
 ];
 
@@ -52,7 +52,7 @@ export default function RegionsSection() {
               <img
                 src={region.image}
                 alt={region.name}
-                className="h-60 w-full object-cover"
+                className="h-60 w-full object-contain bg-white"
               />
 
               <div className="p-6">
