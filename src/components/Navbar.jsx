@@ -17,7 +17,7 @@ export default function Navbar() {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="sticky top-0 z-50 bg-white border-b-2 border-[#EAD7A1] shadow-lg">
+   <nav className="sticky top-0 z-50 bg-[#051632] border-b border-[#C79B35]/30 shadow-lg">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between py-6">
           {/* Logo Section - LARGER */}
@@ -29,7 +29,7 @@ export default function Navbar() {
               <img
                 src="/logo.png"
                 alt="Zenvira"
-                className="h-20 w-auto transition-all duration-300 group-hover:scale-110"
+                className="h-24 w-auto transition-all duration-300 group-hover:scale-110"
               />
               <div className="absolute -bottom-1 left-0 right-0 h-1 bg-gradient-to-r from-[#C79B35] to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
             </div>
@@ -48,7 +48,7 @@ export default function Navbar() {
                   className={`transition-all duration-300 ${
                     isActive(item.path)
                       ? "text-[#C79B35] text-lg"
-                      : "text-[#0D3B2E] group-hover:text-[#C79B35]"
+                      : "text-white group-hover:text-[#C79B35]"
                   }`}
                 >
                   {item.label}
@@ -118,17 +118,17 @@ export default function Navbar() {
           >
             <div className="w-7 h-7 flex flex-col justify-center gap-1.5">
               <span
-                className={`h-1 bg-[#0D3B2E] rounded-full transition-all duration-300 ${
+                className={`h-1 bg-white rounded-full transition-all duration-300 ${
                   isOpen ? "rotate-45 translate-y-2.5" : ""
                 }`}
               />
               <span
-                className={`h-1 bg-[#0D3B2E] rounded-full transition-all duration-300 ${
+                className={`h-1 bg-white rounded-full transition-all duration-300 ${
                   isOpen ? "opacity-0" : ""
                 }`}
               />
               <span
-                className={`h-1 bg-[#0D3B2E] rounded-full transition-all duration-300 ${
+                className={`h-1 bg-white rounded-full transition-all duration-300 ${
                   isOpen ? "-rotate-45 -translate-y-2.5" : ""
                 }`}
               />
@@ -138,7 +138,7 @@ export default function Navbar() {
 
         {/* Mobile Navigation Menu */}
         {isOpen && (
-          <div className="md:hidden pb-6 border-t-2 border-[#EAD7A1] animate-in fade-in slide-in-from-top duration-300">
+          <div className="md:hidden pb-6 bg-[#051632] border-t border-[#C79B35]/30 animate-in fade-in slide-in-from-top duration-300">
             <div className="space-y-3 pt-6">
               {menu.map((item) => (
                 <Link
@@ -149,7 +149,7 @@ export default function Navbar() {
                     ${
                       isActive(item.path)
                         ? "bg-gradient-to-r from-[#C79B35]/20 to-[#C79B35]/5 text-[#C79B35] border-l-4 border-[#C79B35] pl-4"
-                        : "text-[#0D3B2E] hover:bg-[#EAD7A1]/15"
+                        : "text-white hover:bg-[#EAD7A1]/15"
                     }`}
                 >
                   <span className="relative z-10">{item.label}</span>
