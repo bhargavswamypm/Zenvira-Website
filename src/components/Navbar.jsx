@@ -27,7 +27,7 @@ export default function Navbar() {
           >
             <div className="relative">
               <img
-                src="/logo.png"
+                src="/logo-Photoroom.png"
                 alt="Zenvira"
                 className="h-24 w-auto transition-all duration-300 group-hover:scale-110"
               />
